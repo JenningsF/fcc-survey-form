@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Overwatch Survey</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="title">Overwatch Survey</h1>
+        <p id="description">Thank you for the taking the time to let us know about your Overwatch preferences</p>
+    </header>
+    <main id="main">
+        <form id="survey-form">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required />
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required />
+            <label id="number-label" for="age">Age</label>
+            <input type="number" name="age" id="number" min="8" max="99" placeholder="Age" />
+            <label id="game-mode-select-label" for="game-mode-select">Most played game mode</label>
+            <select name="game-mode-select" id="dropdown" required>
+                <option disabled selected value>Select a game mode</option>
+                <option value="quick-play">Quick Play</option>
+                <option value="free-for-all">Free For All</option>
+                <option value="mystery-heroes">Mystery Heroes</option>
+                <option value="competitive">Competitive</option>
+                <option value="other">Other</option>
+            </select>
+            <section>
+                <p>What role do you play the most?</p>
+                <input type="radio" name="role-select" id="tank" value="tank">
+                <label id="tank-label" for="tank">Tank</label>
+                <input type="radio" name="role-select" id="damage" value="damage">
+                <label id="damage-label" for="damage">Damage</label>
+                <input type="radio" name="role-select" id="healer" value="healer">
+                <label id="healer-label" for="healer">Healer</label>
+                <input type="radio" name="role-select" id="flex" value="flex">
+                <label id="flex-label" for="flex">Flex</label>
+            </section>
+            <section>
+                <p>What hero(s) do you enjoy playing the most? <span>(Check all that apply)</span></p>
+                <input type="checkbox" name="hero-select" id="ana" value="ana">
+                <label id="ana-label" for="ana">Ana</label>
+                <input type="checkbox" name="hero-select" id="ashe" value="ashe">
+                <label id="ashe-label" for="ashe">Ashe</label>
+                <input type="checkbox" name="hero-select" id="baptiste" value="baptiste">
+                <label id="baptiste-label" for="baptiste">Baptiste</label>
+                <input type="checkbox" name="hero-select" id="bastion" value="bastion">
+                <label id="bastion-label" for="bastion">Bastion</label>
+                <input type="checkbox" name="hero-select" id="brigitte" value="brigitte">
+                <label id="brigitte-label" for="brigitte">Brigitte</label>
+                <input type="checkbox" name="hero-select" id="dva" value="dva">
+                <label id="dva-label" for="dva">D.Va</label>
+                <input type="checkbox" name="hero-select" id="doomfist" value="doomfist">
+                <label id="doomfist-label" for="doomfist">Doomfist</label>
+                <input type="checkbox" name="hero-select" id="echo" value="echo">
+                <label id="echo-label" for="echo">Echo</label>
+                <input type="checkbox" name="hero-select" id="genji" value="genji">
+                <label id="genji-label" for="genji">Genji</label>
+                <input type="checkbox" name="hero-select" id="hanzo" value="hanzo">
+                <label id="hanzo-label" for="hanzo">Hanzo</label>
+                <input type="checkbox" name="hero-select" id="junkrat" value="junkrat">
+                <label id="junkrat-label" for="junkrat">Junkrat</label>
+                <input type="checkbox" name="hero-select" id="lucio" value="lucio">
+                <label id="lucio-label" for="lucio">Lucio</label>
+                <input type="checkbox" name="hero-select" id="McCree" value="McCree">
+                <label id="McCree-label" for="echo">McCree</label>
+                <input type="checkbox" name="hero-select" id="mei" value="mei">
+                <label id="mei-label" for="mei">Mei</label>
+                <input type="checkbox" name="hero-select" id="mercy" value="mercy">
+                <label id="mercy-label" for="mercy">Mercy</label>
+                <input type="checkbox" name="hero-select" id="moira" value="moira">
+                <label id="moira-label" for="moira">Moira</label>
+                <input type="checkbox" name="hero-select" id="orisa" value="orisa">
+                <label id="orisa-label" for="orisa">Orisa</label>
+                <input type="checkbox" name="hero-select" id="pharah" value="pharah">
+                <label id="pharah-label" for="pharah">Pharah</label>
+                <input type="checkbox" name="hero-select" id="reaper" value="reaper">
+                <label id="reaper-label" for="reaper">Reaper</label>
+                <input type="checkbox" name="hero-select" id="reinhardt" value="reinhardt">
+                <label id="reinhardt-label" for="reinhardt">Reinhardt</label>
+                <input type="checkbox" name="hero-select" id="roadhog" value="roadhog">
+                <label id="roadhog-label" for="roadhog">Roadhog</label>
+                <input type="checkbox" name="hero-select" id="sigma" value="sigma">
+                <label id="sigma-label" for="sigma">Sigma</label>
+                <input type="checkbox" name="hero-select" id="soldier-76" value="soldier-76">
+                <label id="soldier-76-label" for="soldier-76">Soldier: 76</label>
+                <input type="checkbox" name="hero-select" id="sombra" value="sombra">
+                <label id="sombra-label" for="sombra">Sombra</label>
+                <input type="checkbox" name="hero-select" id="symmetra" value="symmetra">
+                <label id="symmetra-label" for="symmetra">Symmetra</label>
+                <input type="checkbox" name="hero-select" id="torbjorn" value="torbjorn">
+                <label id="torbjorn-label" for="torbjorn">Torbjorn</label>
+                <input type="checkbox" name="hero-select" id="tracer" value="tracer">
+                <label id="tracer-label" for="tracer">Tracer</label>
+                <input type="checkbox" name="hero-select" id="widowmaker" value="widowmaker">
+                <label id="widowmaker-label" for="widowmaker">Widowmaker</label>
+            </section>
+            <section>
+                <p>Any additional comments?</p>
+                <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
+            </section>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
